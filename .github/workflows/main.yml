@@ -1,0 +1,49 @@
+# This workflow to automatically build and deploy to GitHub Pages (master branch)
+# when code is pushed to the dev branch
+name: CI
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push events but only for the dev branch
+  push:
+    branches: [ dev ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      #Create environment variable for Node
+      - name: Create .env file
+        uses: SpicyPizza/create-envfile@v1
+        with:
+          envkey_GOOGLE_ANALYTICS_ID: ${{ secrets.GOOGLE_ANALYTICS_ID }}
+
+      #This is required if public is in .gitignore, which it likely is
+      - name: Create public folder for build output
+        run: mkdir -p public
+
+      # Install packages
+      - name: Run npm install
+        run: npm install
+
+      # Gatsby build
+      - name: Run npm build
+        run: npm run build
+
+      # Deploy to master
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          branch: master # The branch the action should deploy to.
+          folder: public # The folder the action should deploy.
