@@ -1,3 +1,7 @@
+require(`dotenv`).config({
+  path: `.env`,
+})
+
 'use strict';
 
 const siteConfig = require('./config.js');
@@ -15,6 +19,17 @@ module.exports = {
     author: siteConfig.author
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        // your google analytics tracking id
+        trackingId: process.env.GOOGLE_ANALYTICS_ID,
+        // Puts tracking script in the head instead of the body
+        head: false,
+        // enable ip anonymization
+        anonymize: true,
+      },
+    },    
     {
       resolve: 'gatsby-source-filesystem',
       options: {
