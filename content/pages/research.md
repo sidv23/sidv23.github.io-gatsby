@@ -14,3 +14,5 @@ The generalization of optimization in Euclidean space to methods in Hilbert spac
 Additionally, I have become interested in the research surrounding security and privacy. The advent of information and computational technology has given us a wealth of information in the world today. Owing to this, there is an imminent need and importance for privacy. $$\epsilon$$-differential privacy and other statistical and mathematical methods of examining risk in sensitive databases are particularly of interest. It also includes using locally-linear embeddings for ensuring privacy in deep learning networks; and, examining Renyi divergence metrics in differential privacy.
 
 As a quantitative analyst at Goldman Sachs, my work revolved around the axes of stochastic calculus, nonparametric statistics, data-mining and financial derivatives; where I used feature engineering techniques to efficiently infer latent behaviour of financial products to market risk exposure.
+
+Footnote: This is a little outdated. 
