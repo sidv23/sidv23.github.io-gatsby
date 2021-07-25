@@ -1,6 +1,6 @@
 var plugins = [{
       plugin: require('/workspace/sidv23.github.io/node_modules/gatsby-plugin-gtag/gatsby-ssr'),
-      options: {"plugins":[],"head":false,"anonymize":true},
+      options: {"plugins":[],"trackingId":"UA-41844991-1","head":true,"anonymize":true},
     },{
       plugin: require('/workspace/sidv23.github.io/node_modules/gatsby-plugin-feed/gatsby-ssr'),
       options: {"plugins":[],"query":"\n          {\n            site {\n              siteMetadata {\n                site_url: url\n                title\n                description: subtitle\n              }\n            }\n          }\n        ","feeds":[{"query":"\n              {\n                allMarkdownRemark(\n                  limit: 1000,\n                  sort: { order: DESC, fields: [frontmatter___date] },\n                  filter: { frontmatter: { template: { eq: \"post\" }, draft: { ne: true } } }\n                ) {\n                  edges {\n                    node {\n                      html\n                      fields {\n                        slug\n                      }\n                      frontmatter {\n                        title\n                        date\n                        template\n                        draft\n                        description\n                      }\n                    }\n                  }\n                }\n              }\n            ","output":"/rss.xml","title":"Siddharth Vishwanath"}]},

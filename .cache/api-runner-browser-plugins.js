@@ -1,6 +1,6 @@
 module.exports = [{
       plugin: require('../node_modules/gatsby-plugin-gtag/gatsby-browser.js'),
-      options: {"plugins":[],"head":false,"anonymize":true},
+      options: {"plugins":[],"trackingId":"UA-41844991-1","head":true,"anonymize":true},
     },{
       plugin: require('../node_modules/gatsby-remark-images/gatsby-browser.js'),
       options: {"plugins":[],"maxWidth":960,"withWebp":true,"ignoreFileExtensions":[]},

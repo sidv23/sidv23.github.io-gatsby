@@ -2,5 +2,6 @@
     "terminal.integrated.fontFamily": "Ubuntu Mono, Monaco, 'Courier New', monospace",
     "terminal.integrated.fontSize": 16,
     "editor.fontFamily": "Ubuntu Mono, Monaco, 'Courier New', monospace",
-    "editor.inlayHints.fontFamily": "Ubuntu Mono, Monaco, 'Courier New', monospace"
+    "editor.inlayHints.fontFamily": "Ubuntu Mono, Monaco, 'Courier New', monospace",
+    "git.ignoreLimitWarning": true
 }
