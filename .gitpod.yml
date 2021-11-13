@@ -1,0 +1,3 @@
+tasks:
+  # - init: npm install && npm run build
+  - init: sudo apt update && sudo apt -y upgrade && yarn install
