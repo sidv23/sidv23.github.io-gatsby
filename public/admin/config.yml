@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: sidv23/sidv23.github.io
   branch: master
 
 media_folder: "static/media"

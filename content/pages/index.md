@@ -15,8 +15,8 @@ Prior to joining Penn State, I worked as a quantitative researcher at Goldman Sa
 
 My research interests are broadly in the areas of:
 
-* **Topological Data Analysis:** Statistical behaviour of Betti numbers, statistical inference from topological summaries, robust topological inference
+* **Topological Data Analysis:** Statistical behavior of Betti numbers, statistical inference from topological summaries, robust topological inference
 
-* **Statistical Learning Theory:** Reproducing kernel Hilbert spaces in probability and statistics, empirical processes, generative models
+* **Statistical Learning Theory:** Reproducing kernel Hilbert spaces in probability and statistics, differential privacy
 
-* **Random Processes:** Mathematical finance, stochastic optimization, random processes on manifolds
+* **Probabilistic Methods:** Hamiltonian Monte Carlo, generative models

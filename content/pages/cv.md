@@ -6,7 +6,7 @@ redirect_from:
   - /resume
 ---
 
-My [CV](/files/siddharth_cv.pdf) is also available as a PDF. (Updated July 2018)
+My [CV](/files/cv.pdf) is also available as a PDF. (Updated July 2021)
 
 
 #### Education

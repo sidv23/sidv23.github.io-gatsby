@@ -7,12 +7,41 @@ redirect_from:
   - /research
 ---
 
-Through my education and experience, I have developed a keen interest for topics in statistical theory that draws inspiration from the geometric and spatial foundations of mathematics. A few of my interests include:
 
-The generalization of optimization in Euclidean space to methods in Hilbert spaces using RKHS. These include, but are not limited to, kernel embeddings of distributions and kernel machine learning - equipping us with a propitious tool for solving a wide range of problems in supervised and unsupervised, large-scale machine learning. Additionally, I'm interested in the associated research using Fast-Fourier transforms and random matrix theory to make computational advances.
+**<span style="color:black"> Repelling-Attracting Hamiltonian Monte Carlo for Multimodal Sampling </span>**<br>
+<span style="color:dodgerblue"> Siddharth Vishwanath </span> & Hyungsuk Tak<br>
+In Preparation. (2021)<br>
 
-Additionally, I have become interested in the research surrounding security and privacy. The advent of information and computational technology has given us a wealth of information in the world today. Owing to this, there is an imminent need and importance for privacy. $$\epsilon$$-differential privacy and other statistical and mathematical methods of examining risk in sensitive databases are particularly of interest. It also includes using locally-linear embeddings for ensuring privacy in deep learning networks; and, examining Renyi divergence metrics in differential privacy.
+**<span style="color:black"> Efficient and Outlier Robust Topological Inference </span>**<br>
+<span style="color:dodgerblue"> Siddharth Vishwanath</span>, Bharath Sriperumbudur, Kenji Fukumizu & Satoshi Kuriki<br>
+In Preparation. (2021)
 
-As a quantitative analyst at Goldman Sachs, my work revolved around the axes of stochastic calculus, nonparametric statistics, data-mining and financial derivatives; where I used feature engineering techniques to efficiently infer latent behaviour of financial products to market risk exposure.
+**<span style="color:black"> Topological Inference for Random Dot-Product Graphs under Local Differential Privacy </span>**<br>
+<span style="color:dodgerblue"> Siddharth Vishwanath</span> & Jonathan Hehir<br>
+In Preparation. (2021)
 
-Footnote: This is a little outdated. 
+**<span style="color:black"> The Shape of Edge Differential Privacy </span>**<br>
+<span style="color:dodgerblue"> Siddharth Vishwanath</span>& Jonathan Hehir<br>
+Theory and Practice of Differential Privacy Workshop. ICML (2021)<br>
+[[Poster](https://sidvishwanath.com/files/tpdp-2021-poster.pdf)], 
+[[Workshop Paper](https://sidvishwanath.com/files/tpdp-2021-paper.pdf)]
+
+**<span style="color:black"> Robust Persistence Diagrams using Reproducing Kernels </span>**<br>
+<span style="color:dodgerblue"> Siddharth Vishwanath</span>, Kenji Fukumizu, Satoshi Kuriki & Bharath Sriperumbudur<br>
+Advances in Neural Information Processing Systems. NeurIPS. (2020)<br>
+[[Link](https://proceedings.neurips.cc/paper/2020/hash/f99499791ad90c9c0ba9852622d0d15f-Abstract.html)], 
+[[Slides](https://sidvishwanath.com/slides/neurips-2020/#1)], 
+[[Code](https://github.com/sidv23/robust-PDs)], 
+[[Poster](https://github.com/sidv23/posters/blob/main/robust-pd.pdf)]
+
+**<span style="color:black"> Statistical Invariance of Betti Numbers in the Thermodynamic Regime </span>**<br>
+<span style="color:dodgerblue"> Siddharth Vishwanath</span>, Kenji Fukumizu, Satoshi Kuriki & Bharath Sriperumbudur<br>
+ar $\!\mathit{\chi}\!$ iv preprint. (2020)<br>
+[[Paper](https://arxiv.org/abs/2001.00220)], 
+[[Slides](https://sidv23.github.io/atmcs-2020)], 
+[[Talk](https://www.youtube.com/watch?v=9K2ynjC5R0c)]
+
+**<span style="color:black"> Bayesian Inference and Optimal Censoring Scheme under Progressive Censoring </span>**<br>
+<span style="color:dodgerblue"> Siddharth Vishwanath</span> & Debasis Kundu<br>
+Advances in Reliability and System Engineering. Springer. (2017)<br>
+[[Link](https://ndl.ethernet.edu.et/bitstream/123456789/1121/1/Advances%20in%20Reliability%20and%20System%20Engineering.pdf#page=243)]
