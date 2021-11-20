@@ -29,3 +29,5 @@ fields:
 - type: list
   name: tags
   label: tags
+pages:
+- content/posts/test-post-1.md
