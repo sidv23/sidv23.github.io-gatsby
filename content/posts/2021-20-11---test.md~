@@ -1,0 +1,21 @@
+---
+template: post
+slug: test
+draft: false
+socialImage: /media/stag.png
+title: Test Post
+date: 2021-11-20
+description: Test name
+category: Test
+tags:
+    - something
+---
+
+This is where the live preview is happening
+
+This is some math stuff $\alpha$ $\beta$
+
+$$
+y = mx + c
+$$
+

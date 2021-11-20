@@ -11,14 +11,14 @@ const Author = () => {
     <div className={styles['author']}>
       <p className={styles['author__name']}>
         {author.name}
-        <a
+        {/* <a
           className={styles['author__bio-twitter']}
           href={getContactHref('github', author.contacts.github)}
           rel="noopener noreferrer"
           target="_blank"
         >
            Follow on Github
-        </a>
+        </a> */}
       </p>
     </div>
   );

@@ -10,10 +10,10 @@
     }
 
     &-title {
-      font-size: $typographic-base-font-size * 1.6875;
-      @include line-height(1.5);
+      font-size: $typographic-base-font-size * 1.2;
+      @include line-height(1);
       @include margin-top(0);
-      @include margin-bottom(.5);
+      @include margin-bottom(0);
 
       &-link {
         color: $color-base;
@@ -29,15 +29,17 @@
     }
 
     &-description {
-      font-size: $typographic-base-font-size;
+      font-size: $typographic-base-font-size * 0.9;
+      color: $color-gray;
       @include line-height(1);
-      @include margin-bottom(.75);
+      @include margin-bottom(0);
+      @include margin-top(0);
     }
 
     &-meta {
       &-time {
         font-size: $typographic-small-font-size;
-        color: $color-base;
+        color: $color-secondary;
         font-weight: 600;
         text-transform: uppercase;
       }
@@ -65,7 +67,7 @@
     }
 
     &-readmore {
-      font-size: $typographic-base-font-size;
+      font-size: $typographic-base-font-size * 0.9;
       color: $color-primary;
 
       &:hover,

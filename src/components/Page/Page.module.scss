@@ -38,10 +38,10 @@
 
 @include breakpoint-md {
   .page {
-    lost-column: 2/3;
+    lost-column: 5/8;
 
     &__inner {
-      padding: 40px 35px;
+      padding: 30px 35px;
     }
 
   }

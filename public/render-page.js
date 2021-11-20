@@ -115,9 +115,9 @@ var plugins = [{
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-feed/gatsby-ssr */ "./node_modules/gatsby-plugin-feed/gatsby-ssr.js"),
   options: {
     "plugins": [],
-    "query": "\n          {\n            site {\n              siteMetadata {\n                site_url: url\n                title\n                description: subtitle\n              }\n            }\n          }\n        ",
+    "query": "\n        {\n          site {\n            siteMetadata {\n              site_url: url\n              title\n              description: subtitle\n            }\n          }\n        }\n        ",
     "feeds": [{
-      "query": "\n              {\n                allMarkdownRemark(\n                  limit: 1000,\n                  sort: { order: DESC, fields: [frontmatter___date] },\n                  filter: { frontmatter: { template: { eq: \"post\" }, draft: { ne: true } } }\n                ) {\n                  edges {\n                    node {\n                      html\n                      fields {\n                        slug\n                      }\n                      frontmatter {\n                        title\n                        date\n                        template\n                        draft\n                        description\n                      }\n                    }\n                  }\n                }\n              }\n            ",
+      "query": "\n            {\n              allMarkdownRemark(\n                limit: 1000,\n                sort: { order: DESC, fields: [frontmatter___date] },\n                filter: { frontmatter: { template: { eq: \"post\" }, draft: { ne: true } } }\n                ) {\n                  edges {\n                    node {\n                      html\n                      fields {\n                        slug\n                      }\n                      frontmatter {\n                        title\n                        date\n                        template\n                        draft\n                        description\n                      }\n                    }\n                  }\n                }\n              }\n              ",
       "output": "/rss.xml",
       "title": "Siddharth Vishwanath"
     }]
@@ -142,7 +142,7 @@ var plugins = [{
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-sitemap/gatsby-ssr */ "./node_modules/gatsby-plugin-sitemap/gatsby-ssr.js"),
   options: {
     "plugins": [],
-    "query": "\n          {\n            site {\n              siteMetadata {\n                siteUrl: url\n              }\n            }\n            allSitePage(\n              filter: {\n                path: { regex: \"/^(?!/404/|/404.html|/dev-404-page/)/\" }\n              }\n            ) {\n              edges {\n                node {\n                  path\n                }\n              }\n            }\n          }\n        ",
+    "query": "\n            {\n              site {\n                siteMetadata {\n                  siteUrl: url\n                }\n              }\n              allSitePage(\n                filter: {\n                  path: { regex: \"/^(?!/404/|/404.html|/dev-404-page/)/\" }\n                }\n                ) {\n                  edges {\n                    node {\n                      path\n                    }\n                  }\n                }\n              }\n              ",
     "output": "/sitemap.xml",
     "createLinkInHead": true
   }
