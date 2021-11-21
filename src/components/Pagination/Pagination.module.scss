@@ -4,10 +4,11 @@
 .pagination {
   @include margin-top(2);
   display: flex;
+  align-items: center;
 
   &__prev {
-    width: 50%;
-    text-align: left;
+    width: 20%;
+    padding-left: 10%;
 
     &-link {
       color: $color-secondary;
@@ -29,8 +30,9 @@
   }
 
   &__next {
-    width: 50%;
+    width: 20%;
     text-align: right;
+    padding-right: 10%;
 
     &-link {
       color: $color-secondary;
