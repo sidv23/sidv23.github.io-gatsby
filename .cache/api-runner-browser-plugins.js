@@ -9,7 +9,7 @@ module.exports = [{
       options: {"plugins":[],"offsetY":0,"className":"anchor"},
     },{
       plugin: require('../node_modules/gatsby-plugin-netlify-cms/gatsby-browser.js'),
-      options: {"plugins":[],"modulePath":"/workspace/sidv23.github.io/src/cms/index.js"},
+      options: {"plugins":[],"modulePath":"/Users/vishwanathgl/Documents/Github/sidvishwanath/src/cms/index.js"},
     },{
       plugin: require('../node_modules/gatsby-plugin-google-gtag/gatsby-browser.js'),
       options: {"plugins":[],"trackingIds":["UA-41844991-1"],"pluginConfig":{"head":true}},

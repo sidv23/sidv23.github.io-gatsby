@@ -2,7 +2,7 @@
 template: post
 slug: testpost
 draft: false
-socialImage: "/media/tda-images/dens.svg"
+socialImage: "/public/media/tda-images/dens.svg"
 title: Test Post
 date: 2021-11-20T20:47:11Z
 description: A test post to try out
@@ -13,7 +13,7 @@ tags:
 ---
 This is a test post. A gif is inserted below.
 
-![](/media/tda-images/thermodynamic.gif)
+![](/public/media/tda-images/thermodynamic.gif)
 
 Some math below $\\alpha$
 

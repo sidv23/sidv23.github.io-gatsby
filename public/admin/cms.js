@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "9a7ebe08c562c4f90809";
+/******/ 	var hotCurrentHash = "9abdf59482fb8e3bad73";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -934,8 +934,8 @@ setImmediate(function () {
     return;
   }
 
-  reactHotLoader.register(_netlifyIdentityWidget, "_netlifyIdentityWidget", "/workspace/sidv23.github.io/node_modules/gatsby-plugin-netlify-cms/cms-identity.js");
-  reactHotLoader.register(addLoginListener, "addLoginListener", "/workspace/sidv23.github.io/node_modules/gatsby-plugin-netlify-cms/cms-identity.js");
+  reactHotLoader.register(_netlifyIdentityWidget, "_netlifyIdentityWidget", "/Users/vishwanathgl/Documents/Github/sidvishwanath/node_modules/gatsby-plugin-netlify-cms/cms-identity.js");
+  reactHotLoader.register(addLoginListener, "addLoginListener", "/Users/vishwanathgl/Documents/Github/sidvishwanath/node_modules/gatsby-plugin-netlify-cms/cms-identity.js");
 })();
 
 ;
@@ -1006,8 +1006,8 @@ _netlifyCmsApp.default.registerPreviewStyle("cms.css");
     return;
   }
 
-  reactHotLoader.register(_netlifyCmsApp, "_netlifyCmsApp", "/workspace/sidv23.github.io/node_modules/gatsby-plugin-netlify-cms/cms.js");
-  reactHotLoader.register(_emitter, "_emitter", "/workspace/sidv23.github.io/node_modules/gatsby-plugin-netlify-cms/cms.js");
+  reactHotLoader.register(_netlifyCmsApp, "_netlifyCmsApp", "/Users/vishwanathgl/Documents/Github/sidvishwanath/node_modules/gatsby-plugin-netlify-cms/cms.js");
+  reactHotLoader.register(_emitter, "_emitter", "/Users/vishwanathgl/Documents/Github/sidvishwanath/node_modules/gatsby-plugin-netlify-cms/cms.js");
 })();
 
 ;
@@ -1718,7 +1718,7 @@ netlify_cms_app__WEBPACK_IMPORTED_MODULE_0___default.a.registerPreviewTemplate('
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/workspace/sidv23.github.io/src/cms/preview-templates/page-preview.js",
+var _jsxFileName = "/Users/vishwanathgl/Documents/Github/sidvishwanath/src/cms/preview-templates/page-preview.js",
     _this = undefined;
 
 (function () {
@@ -1775,8 +1775,8 @@ var _default = PagePreview;
     return;
   }
 
-  reactHotLoader.register(PagePreview, "PagePreview", "/workspace/sidv23.github.io/src/cms/preview-templates/page-preview.js");
-  reactHotLoader.register(_default, "default", "/workspace/sidv23.github.io/src/cms/preview-templates/page-preview.js");
+  reactHotLoader.register(PagePreview, "PagePreview", "/Users/vishwanathgl/Documents/Github/sidvishwanath/src/cms/preview-templates/page-preview.js");
+  reactHotLoader.register(_default, "default", "/Users/vishwanathgl/Documents/Github/sidvishwanath/src/cms/preview-templates/page-preview.js");
 })();
 
 ;
@@ -1800,7 +1800,7 @@ var _default = PagePreview;
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/workspace/sidv23.github.io/src/cms/preview-templates/post-preview.js",
+var _jsxFileName = "/Users/vishwanathgl/Documents/Github/sidvishwanath/src/cms/preview-templates/post-preview.js",
     _this = undefined;
 
 (function () {
@@ -1857,8 +1857,8 @@ var _default = PostPreview;
     return;
   }
 
-  reactHotLoader.register(PostPreview, "PostPreview", "/workspace/sidv23.github.io/src/cms/preview-templates/post-preview.js");
-  reactHotLoader.register(_default, "default", "/workspace/sidv23.github.io/src/cms/preview-templates/post-preview.js");
+  reactHotLoader.register(PostPreview, "PostPreview", "/Users/vishwanathgl/Documents/Github/sidvishwanath/src/cms/preview-templates/post-preview.js");
+  reactHotLoader.register(_default, "default", "/Users/vishwanathgl/Documents/Github/sidvishwanath/src/cms/preview-templates/post-preview.js");
 })();
 
 ;
@@ -1878,9 +1878,9 @@ var _default = PostPreview;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /workspace/sidv23.github.io/node_modules/gatsby-plugin-netlify-cms/cms.js */"./node_modules/gatsby-plugin-netlify-cms/cms.js");
-__webpack_require__(/*! /workspace/sidv23.github.io/node_modules/gatsby-plugin-netlify-cms/cms-identity.js */"./node_modules/gatsby-plugin-netlify-cms/cms-identity.js");
-module.exports = __webpack_require__(/*! /workspace/sidv23.github.io/src/cms/index.js */"./src/cms/index.js");
+__webpack_require__(/*! /Users/vishwanathgl/Documents/Github/sidvishwanath/node_modules/gatsby-plugin-netlify-cms/cms.js */"./node_modules/gatsby-plugin-netlify-cms/cms.js");
+__webpack_require__(/*! /Users/vishwanathgl/Documents/Github/sidvishwanath/node_modules/gatsby-plugin-netlify-cms/cms-identity.js */"./node_modules/gatsby-plugin-netlify-cms/cms-identity.js");
+module.exports = __webpack_require__(/*! /Users/vishwanathgl/Documents/Github/sidvishwanath/src/cms/index.js */"./src/cms/index.js");
 
 
 /***/ }),
