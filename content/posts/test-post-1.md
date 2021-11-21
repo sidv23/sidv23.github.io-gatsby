@@ -4,7 +4,7 @@ slug: testpost
 draft: false
 socialImage: "/public/media/tda-images/dens.svg"
 title: Test Post
-date: 2021-11-20T20:47:11Z
+date: 2021-11-20T20:47:11.000+00:00
 description: A test post to try out
 category: tda
 tags:
@@ -13,7 +13,7 @@ tags:
 ---
 This is a test post. A gif is inserted below.
 
-![](/public/media/tda-images/thermodynamic.gif)
+![Thermodynamic Regime](/media/tda-images/thermodynamic.gif)
 
 Some math below $\\alpha$
 
