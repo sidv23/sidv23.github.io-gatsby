@@ -8021,10 +8021,10 @@ flow-bin@^0.165.1:
   resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.165.1.tgz#55d584b10fe1ed8299fe12be968a9e58810303ee"
   integrity sha512-AjmvNdY8oFsOb0ZQkYxFj3jnIzqrCIcMeuQCTYbTJuAJoCbz7GszOFzL0Sp2qcK2BcIYWnC4OJbLAQmnDjgI7A==
 
-flow-typed@^3.2.1:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/flow-typed/-/flow-typed-3.4.0.tgz#fc87f17a23b1592f03bc680f2f25112fa1fff622"
-  integrity sha512-Vsf005L4GnGwMheIg7Y//wCSZrcTBovn5+vuB6uhAbMDPhxx8UpAB56YMm5GLj4OJupqOLiZ/bMXtdsm7/f8vg==
+flow-typed@^3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/flow-typed/-/flow-typed-3.5.0.tgz#04551d33a2c154ceeea7e524b455b7ede887aa17"
+  integrity sha512-mqMaqH2XMfCLpXpm/qXhiX7twjjZ93egXyynyOzQnPLBFiJgOSUoHdThXZSQWYwtAiy5tiWhx/lw6aFjy35icQ==
   dependencies:
     "@octokit/rest" "^16.43.1"
     colors "^1.4.0"
@@ -8037,7 +8037,7 @@ flow-typed@^3.2.1:
     prettier "^1.19.1"
     rimraf "^3.0.2"
     semver "7.3.2"
-    table "^5.4.6"
+    table "^6.7.3"
     unzipper "^0.10.8"
     which "^2.0.2"
     yargs "^15.1.0"
@@ -18977,7 +18977,7 @@ sync-fetch@0.3.0:
     buffer "^5.7.0"
     node-fetch "^2.6.1"
 
-table@^5.2.3, table@^5.4.6:
+table@^5.2.3:
   version "5.4.6"
   resolved "https://registry.yarnpkg.com/table/-/table-5.4.6.tgz#1292d19500ce3f86053b05f0e8e7e4a3bb21079e"
   integrity sha512-wmEc8m4fjnob4gt5riFRtTu/6+4rSe12TpAELNSqHMfF3IqnA+CH37USM6/YR3qRZv7e56kAEAtd6nKZaxe0Ug==
@@ -18987,7 +18987,7 @@ table@^5.2.3, table@^5.4.6:
     slice-ansi "^2.1.0"
     string-width "^3.0.0"
 
-table@^6.6.0:
+table@^6.6.0, table@^6.7.3:
   version "6.7.3"
   resolved "https://registry.yarnpkg.com/table/-/table-6.7.3.tgz#255388439715a738391bd2ee4cbca89a4d05a9b7"
   integrity sha512-5DkIxeA7XERBqMwJq0aHZOdMadBx4e6eDoFRuyT5VR82J0Ycg2DwM6GfA/EQAhJ+toRTaS1lIdSQCqgrmhPnlw==
