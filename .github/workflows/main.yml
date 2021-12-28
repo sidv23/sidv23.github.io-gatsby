@@ -35,11 +35,13 @@ jobs:
 
       # Install packages
       - name: Run npm install
-        run: npm install
+        # run: npm install
+        run: yarn install
 
       # Gatsby build
       - name: Run npm build
-        run: npm run build
+        # run: npm run build
+        run: yarn run build
 
       # Deploy to master
       - name: Deploy 🚀
