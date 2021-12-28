@@ -3776,7 +3776,7 @@ var _objectWithoutPropertiesLoose2 = _interopRequireDefault(__webpack_require__(
 
 var _fs = _interopRequireDefault(__webpack_require__(/*! fs */ "fs"));
 
-var _pify = _interopRequireDefault(__webpack_require__(/*! pify */ "./node_modules/gatsby-plugin-sitemap/node_modules/pify/index.js"));
+var _pify = _interopRequireDefault(__webpack_require__(/*! pify */ "./node_modules/pify/index.js"));
 
 var _minimatch = _interopRequireDefault(__webpack_require__(/*! minimatch */ "./node_modules/minimatch/minimatch.js"));
 
@@ -3894,104 +3894,6 @@ function getNodes(results) {
 
   throw new Error("[gatsby-plugin-sitemap]: Plugin is unsure how to handle the results of your query, you'll need to write custom page filter and serializer in your gatsby config");
 }
-
-/***/ }),
-
-/***/ "./node_modules/gatsby-plugin-sitemap/node_modules/pify/index.js":
-/*!***********************************************************************!*\
-  !*** ./node_modules/gatsby-plugin-sitemap/node_modules/pify/index.js ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-const processFn = (fn, opts) => function () {
-  const P = opts.promiseModule;
-  const args = new Array(arguments.length);
-
-  for (let i = 0; i < arguments.length; i++) {
-    args[i] = arguments[i];
-  }
-
-  return new P((resolve, reject) => {
-    if (opts.errorFirst) {
-      args.push(function (err, result) {
-        if (opts.multiArgs) {
-          const results = new Array(arguments.length - 1);
-
-          for (let i = 1; i < arguments.length; i++) {
-            results[i - 1] = arguments[i];
-          }
-
-          if (err) {
-            results.unshift(err);
-            reject(results);
-          } else {
-            resolve(results);
-          }
-        } else if (err) {
-          reject(err);
-        } else {
-          resolve(result);
-        }
-      });
-    } else {
-      args.push(function (result) {
-        if (opts.multiArgs) {
-          const results = new Array(arguments.length - 1);
-
-          for (let i = 0; i < arguments.length; i++) {
-            results[i] = arguments[i];
-          }
-
-          resolve(results);
-        } else {
-          resolve(result);
-        }
-      });
-    }
-
-    fn.apply(this, args);
-  });
-};
-
-module.exports = (obj, opts) => {
-  opts = Object.assign({
-    exclude: [/.+(Sync|Stream)$/],
-    errorFirst: true,
-    promiseModule: Promise
-  }, opts);
-
-  const filter = key => {
-    const match = pattern => typeof pattern === 'string' ? key === pattern : pattern.test(key);
-
-    return opts.include ? opts.include.some(match) : !opts.exclude.some(match);
-  };
-
-  let ret;
-
-  if (typeof obj === 'function') {
-    ret = function () {
-      if (opts.excludeMain) {
-        return obj.apply(this, arguments);
-      }
-
-      return processFn(obj, opts).apply(this, arguments);
-    };
-  } else {
-    ret = Object.create(Object.getPrototypeOf(obj));
-  }
-
-  for (const key in obj) {
-    // eslint-disable-line guard-for-in
-    const x = obj[key];
-    ret[key] = typeof x === 'function' && filter(key) ? processFn(x, opts) : x;
-  }
-
-  return ret;
-};
 
 /***/ }),
 
@@ -5601,6 +5503,102 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 	}
 
 	return to;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/pify/index.js":
+/*!************************************!*\
+  !*** ./node_modules/pify/index.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+const processFn = (fn, opts) => function () {
+	const P = opts.promiseModule;
+	const args = new Array(arguments.length);
+
+	for (let i = 0; i < arguments.length; i++) {
+		args[i] = arguments[i];
+	}
+
+	return new P((resolve, reject) => {
+		if (opts.errorFirst) {
+			args.push(function (err, result) {
+				if (opts.multiArgs) {
+					const results = new Array(arguments.length - 1);
+
+					for (let i = 1; i < arguments.length; i++) {
+						results[i - 1] = arguments[i];
+					}
+
+					if (err) {
+						results.unshift(err);
+						reject(results);
+					} else {
+						resolve(results);
+					}
+				} else if (err) {
+					reject(err);
+				} else {
+					resolve(result);
+				}
+			});
+		} else {
+			args.push(function (result) {
+				if (opts.multiArgs) {
+					const results = new Array(arguments.length - 1);
+
+					for (let i = 0; i < arguments.length; i++) {
+						results[i] = arguments[i];
+					}
+
+					resolve(results);
+				} else {
+					resolve(result);
+				}
+			});
+		}
+
+		fn.apply(this, args);
+	});
+};
+
+module.exports = (obj, opts) => {
+	opts = Object.assign({
+		exclude: [/.+(Sync|Stream)$/],
+		errorFirst: true,
+		promiseModule: Promise
+	}, opts);
+
+	const filter = key => {
+		const match = pattern => typeof pattern === 'string' ? key === pattern : pattern.test(key);
+		return opts.include ? opts.include.some(match) : !opts.exclude.some(match);
+	};
+
+	let ret;
+	if (typeof obj === 'function') {
+		ret = function () {
+			if (opts.excludeMain) {
+				return obj.apply(this, arguments);
+			}
+
+			return processFn(obj, opts).apply(this, arguments);
+		};
+	} else {
+		ret = Object.create(Object.getPrototypeOf(obj));
+	}
+
+	for (const key in obj) { // eslint-disable-line guard-for-in
+		const x = obj[key];
+		ret[key] = typeof x === 'function' && filter(key) ? processFn(x, opts) : x;
+	}
+
+	return ret;
 };
 
 
