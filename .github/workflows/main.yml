@@ -34,6 +34,10 @@ jobs:
         run: mkdir -p public
 
       # Install packages
+      - name: Test
+        run: node --version
+
+      # Install packages
       - name: Run npm install
         # run: npm install
         run: yarn install
