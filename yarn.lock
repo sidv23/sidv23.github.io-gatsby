@@ -9558,10 +9558,10 @@ gatsby-remark-smartypants@^2.10.0:
     retext-smartypants "^3.0.3"
     unist-util-visit "^1.4.1"
 
-gatsby-source-datocms@^3.0.14:
-  version "3.0.14"
-  resolved "https://registry.yarnpkg.com/gatsby-source-datocms/-/gatsby-source-datocms-3.0.14.tgz#6f817ca6f171843af33ab9c8c03fd2a3bf0f781c"
-  integrity sha512-aI89VIQyrfHEnMJbNl+ylQa61Rpai6IiN3PTY4KIK6FSpvXOFi6l1Mpt8IYl2BQZUFPGCQOyh2qH+io0Nchn/Q==
+gatsby-source-datocms@^3.0.15:
+  version "3.0.15"
+  resolved "https://registry.yarnpkg.com/gatsby-source-datocms/-/gatsby-source-datocms-3.0.15.tgz#9f368bcc3cae48e8f6bae2751ae28b524f36657b"
+  integrity sha512-RHakQtG4aDGkql6JH7xdec0/rInHiPTPZJs640QrX+qLwDaB4cz3n9K0gGe/jOdBz7Q38qfCa2TZGD7+ft8cpQ==
   dependencies:
     core-js "^3.2.1"
     datocms-client ">=3.5.4"
