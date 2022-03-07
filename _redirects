@@ -1,0 +1,9 @@
+# Very specific rules
+/smac-2020/*   /slides/smac-2020/:splat 200!
+/atmcs-2020/*  /slides/atmcs-2020/:splat 200!
+/sep7/*        /slides/sep7/:splat 200!
+/twosigma.pdf  /files/twosigma.pdf 200!
+/slides/*  https://sidv23.github.io/slides/:splat 200!
+
+# General rules
+/stag /posts/stag/ 200!
