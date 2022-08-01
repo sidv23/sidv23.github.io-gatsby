@@ -106,7 +106,7 @@
     "eslint-plugin-jsx-a11y": "6.5.1",
     "eslint-plugin-react": "7.29.4",
     "eslint-watch": "8.0.0",
-    "flow-bin": "^0.181.2",
+    "flow-bin": "^0.183.1",
     "flow-typed": "^3.7.0",
     "gatsby-plugin-force-trailing-slashes": "^1.0.6",
     "gh-pages": "3.2.3",
