@@ -6,7 +6,7 @@ redirect_from:
   - /resume
 ---
 
-My [CV](/files/cv.pdf) is also available as a PDF. (Updated July 2021)
+My [CV](/files/cv.pdf) is also available as a PDF. (Updated Dec 2022)
 
 
 #### Education
