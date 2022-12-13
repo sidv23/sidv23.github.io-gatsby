@@ -21,7 +21,7 @@ In Preparation. (2021)
 In Preparation. (2021)
 
 **<span style="color:black"> The Shape of Edge Differential Privacy </span>**<br>
-<span style="color:dodgerblue"> Siddharth Vishwanath</span>& Jonathan Hehir<br>
+<span style="color:dodgerblue"> Siddharth Vishwanath</span> & Jonathan Hehir<br>
 Theory and Practice of Differential Privacy Workshop. ICML (2021)<br>
 [[Poster](https://sidvishwanath.com/files/tpdp-2021-poster.pdf)], 
 [[Workshop Paper](https://sidvishwanath.com/files/tpdp-2021-paper.pdf)]

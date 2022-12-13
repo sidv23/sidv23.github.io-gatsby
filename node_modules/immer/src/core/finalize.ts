@@ -37,7 +37,7 @@ export function processResult(result: any, scope: ImmerScope) {
 		}
 		if (scope.patches_) {
 			getPlugin("Patches").generateReplacementPatches_(
-				baseDraft[DRAFT_STATE],
+				baseDraft[DRAFT_STATE].base_,
 				result,
 				scope.patches_,
 				scope.inversePatches_!
@@ -65,7 +65,7 @@ function finalize(rootScope: ImmerScope, value: any, path?: PatchPath) {
 			value,
 			(key, childValue) =>
 				finalizeProperty(rootScope, state, value, key, childValue, path),
-			true // See #590, don't recurse into non-enumarable of non drafted objects
+			true // See #590, don't recurse into non-enumerable of non drafted objects
 		)
 		return value
 	}

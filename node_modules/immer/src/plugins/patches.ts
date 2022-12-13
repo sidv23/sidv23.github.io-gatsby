@@ -183,7 +183,7 @@ export function enablePatches() {
 	}
 
 	function generateReplacementPatches_(
-		rootState: ImmerState,
+		baseValue: any,
 		replacement: any,
 		patches: Patch[],
 		inversePatches: Patch[]
@@ -196,7 +196,7 @@ export function enablePatches() {
 		inversePatches.push({
 			op: REPLACE,
 			path: [],
-			value: rootState.base_
+			value: baseValue
 		})
 	}
 
@@ -240,7 +240,9 @@ export function enablePatches() {
 				case ADD:
 					switch (type) {
 						case Archtype.Array:
-							return base.splice(key as any, 0, value)
+							return key === "-"
+								? base.push(value)
+								: base.splice(key as any, 0, value)
 						case Archtype.Map:
 							return base.set(key, value)
 						case Archtype.Set:
