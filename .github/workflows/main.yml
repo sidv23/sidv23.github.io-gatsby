@@ -24,7 +24,7 @@ jobs:
         run: echo "::set-output name=dir::$(yarn cache dir)"
 
       - name: Yarn cache
-        uses: actions/cache@v1
+        uses: actions/cache@v3
         id: yarn-cache
         with:
           path: ${{ steps.yarn-cache-dir.outputs.dir }}
@@ -33,7 +33,7 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Gatsby Cache Folder
-        uses: actions/cache@v1
+        uses: actions/cache@v3
         id: gatsby-cache-folder
         with:
           path: .cache
@@ -42,7 +42,7 @@ jobs:
             ${{ runner.os }}-cache-gatsby
 
       - name: Gatsby Public Folder
-        uses: actions/cache@v1
+        uses: actions/cache@v3
         id: gatsby-public-folder
         with:
           path: public/
@@ -51,7 +51,7 @@ jobs:
             ${{ runner.os }}-public-gatsby
             
       - name: Cache node modules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         env:
           cache-name: cache-node-modules
         with:
