@@ -84,7 +84,7 @@ jobs:
 
       # Deploy to master
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.4.1
+        uses: JamesIves/github-pages-deploy-action@v4.5.0
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: public # The folder the action should deploy.
